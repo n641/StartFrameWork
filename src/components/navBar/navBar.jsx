@@ -1,20 +1,43 @@
 import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="bg-blue-900 ">
-      <div className="flex  items-center justify-between w-9/12 ">
-        <h1>Start Framework</h1>
+    <div className="bg-blue-900 fixed top-0 w-full p-4">
+      <div className="flex  items-center justify-between mx-40">
+        <Link to={""}>
+          <h1 className="text-white text-3xl font-bold">Start Framework</h1>
+        </Link>
 
-        <ul className="flex gap-3">
+        <ul className="flex gap-8">
           <li>
-            <a href="">ABOUT</a>
+            <Link
+              to={"about"}
+              className="text-white text-md font-bold capitalize"
+            >
+              ABOUT
+            </Link>
           </li>
           <li>
-            <a href="">Portfolio</a>
+            <Link
+              to={"Portofolio"}
+              className="text-white text-md font-bold capitalize"
+            >
+              POROFOLIO
+            </Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link
+              to={"contact"}
+              className="text-white text-md font-bold capitalize"
+            >
+              CONTACT
+            </Link>
           </li>
         </ul>
       </div>

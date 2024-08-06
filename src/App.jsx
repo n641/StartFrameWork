@@ -11,17 +11,32 @@ import {
   Link,
 } from "react-router-dom";
 import Layout from "./components/layout/layout";
+import About from './components/about/about';
+import Portofolio from './components/portofolio/portofolio';
+import Contact from './components/contact/contact';
 
 const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
-    // children: [
-    //   {
-    //     index: true,
-    //     element: <Home />,
-    //   },
-    // ],
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path:'about',
+        element: <About />,
+      },
+      {
+        path:'Portofolio',
+        element: <Portofolio />,
+      },
+      {
+        path:'contact',
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 function App() {
