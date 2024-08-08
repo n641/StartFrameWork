@@ -1,19 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Home from "./components/home/home";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/about/about";
+import Contact from "./components/contact/contact";
 import Layout from "./components/layout/layout";
-import About from './components/about/about';
-import Portofolio from './components/portofolio/portofolio';
-import Contact from './components/contact/contact';
+import Portofolio from "./components/portofolio/portofolio";
 
 const router = createBrowserRouter([
   {
@@ -25,15 +17,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path:'about',
+        path: "about",
         element: <About />,
       },
       {
-        path:'Portofolio',
+        path: "Portofolio",
         element: <Portofolio />,
       },
       {
-        path:'contact',
+        path: "contact",
         element: <Contact />,
       },
     ],

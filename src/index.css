@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --Main-Color:#2D3E50;
+  --Second-Color:#1A252F;
+  --thired-Color:#1CBC9C;
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -19,8 +22,31 @@
 #root{
   padding: 0 !important;
   margin: 0 !important;
+  max-width: 100%;
 }
 
 .Active{
   background-color: aqua;
+}
+
+.bg-blue{
+  background-color: var(--Main-Color)
+}
+.bg-green{
+  background-color: var(--thired-Color)
+}
+.bg-green-1{
+  background-color: rgba(28, 188, 156, 0.582)
+}
+
+.bg-blue-dark{
+  background-color: var(--Second-Color)
+}
+
+.h-60Vh{
+  height: 90vh;
+}
+
+.text-blue{
+  color: var(--Main-Color)
 }
