@@ -1,5 +1,7 @@
 import React from "react";
 import Avatar from "../../assets/imgs/avatar.svg";
+import { FaStar } from "react-icons/fa6";
+
 function Home() {
   return (
     <div className="bg-green flex flex-col justify-center align-middle items-center h-60Vh gap-5">
@@ -8,7 +10,7 @@ function Home() {
 
       <div className="flex gap-3 items-center">
         <div className="w-32 h-1 bg-white" />
-        <p className="text-white">*</p>
+        <FaStar color="white"/>
         <div className="w-32 h-1 bg-white" />
       </div>
 
